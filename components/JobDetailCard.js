@@ -27,7 +27,7 @@ export default function JobDetailCard({public_id, state, created_at, providers})
 
     return (
         <div className="relative p-4 pr-11 shadow-md rounded-md border border-black/30 text-sm">
-            <button className="absolute right-2 top-2 border border-gray-800 text-gray-800 font-semibold p-2 rounded-md hover:bg-gray-800 hover:text-white transition-colors" onClick={updateStatus}>
+            <button className="absolute right-2 top-2 border border-gray-800 text-gray-800 font-semibold p-2 rounded-md hover:bg-gray-800 hover:text-white transition-colors" onClick={updateStatus} disabled={loading}>
                 <BiRefresh size={20}/>
             </button>
             {!loading ? (
